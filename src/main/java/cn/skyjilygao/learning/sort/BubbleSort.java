@@ -4,7 +4,7 @@ import cn.skyjilygao.learning.util.PrintUtil;
 
 /**
  * 冒泡排序
- * 参考：
+ * 参考：<a href="https://baike.baidu.com/item/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/9762418"> 冒泡排序 </a>
  * <p> 原理</p>
  * <br> 1. 比较相邻的元素。如果第一个比第二个大，就交换他们两个。
  * <br> 2. 对每一对相邻元素做同样的工作，从开始第一对到结尾的最后一对。在这一点，最后的元素应该会是最大的数。
