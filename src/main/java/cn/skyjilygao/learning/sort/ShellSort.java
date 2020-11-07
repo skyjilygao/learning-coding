@@ -24,7 +24,7 @@ import cn.skyjilygao.learning.util.PrintUtil;
  * <br>
  *
  * @author skyjilygao
- * @date 20201016
+ * @date 20201107
  */
 public class ShellSort {
     public static void main(String[] args) {
