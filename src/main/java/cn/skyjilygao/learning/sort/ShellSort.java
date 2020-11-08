@@ -36,6 +36,40 @@ public class ShellSort {
 
     /**
      * 希尔排序
+     * shell sort
+     * len = 9
+     *
+     * 第一大循环：
+     * mid = 4
+     * 第一步：
+     * i = mid = 4
+     * j=i-mid=0
+     * 判断：j>=0 && j跟i比较，如果 < ,则跳过,j+mid=i的值,走第二步;否则j跟i交换值,同时j-=mid
+     * 判断：j>=0 && j跟i比较，如果 < ,则跳过,j+mid=i的值，,走第二步;否则j跟i交换值,同时j-=mid
+     *
+     * 第二步：
+     * i++；
+     * j=j-mid=1
+     * 判断：j>=0 && j跟i比较，如果 < ,则跳过,j+mid=i的值,走第二步;否则j跟i交换值,同时j-=mid
+     * 判断：j>=0 && j跟i比较，如果 < ,则跳过,j+mid=i的值，,走第二步;否则j跟i交换值,同时j-=mid
+     * 直到i=9时不满足条件则进行下一个大循环。
+     *
+     * 第二大循环：
+     * mid /=2
+     * 如果mid==0，则表示排序继续，return；否则开始第一步。
+     * 第一步：
+     * i = mid = 2
+     * j=i-mid=0
+     * 判断：j>=0 && j跟i比较，如果 < ,则跳过,j+mid=i的值,走第二步;否则j跟i交换值,同时j-=mid
+     * 判断：j>=0 && j跟i比较，如果 < ,则跳过,j+mid=i的值，,走第二步;否则j跟i交换值,同时j-=mid
+     *
+     * 第二步：
+     * i++；
+     * j=j-mid=1
+     * 判断：j>=0 && j跟i比较，如果 < ,则跳过,j+mid=i的值,走第二步;否则j跟i交换值,同时j-=mid
+     * 判断：j>=0 && j跟i比较，如果 < ,则跳过,j+mid=i的值，,走第二步;否则j跟i交换值,同时j-=mid
+     * 直到i=9时不满足条件则重复第二大循环。
+     *
      * @param nums
      */
     public static void shellSort(int[] nums){
@@ -47,9 +81,11 @@ public class ShellSort {
                 int j = i - m;
                 while (j >= 0 && nums[j] > tmp) {
                     nums[j+m] = nums[j];
+                    System.out.println(PrintUtil.arrayInt(nums) + "交换后 j="+j+"  ,m= "+m+", j+m="+(j+m));
                     j -= m;
                 }
                 nums[j+m] = tmp;
+                System.out.println(PrintUtil.arrayInt(nums)+"aaaaaa：本次i="+i);
             }
         }
     }
