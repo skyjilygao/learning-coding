@@ -15,7 +15,8 @@ public class HeapSort {
         int len = nums.length;
         buildMaxHeap(nums, len);
         for (int i = nums.length - 1; i >= 0; i--) {
-            
+            // todo: https://www.cnblogs.com/chengxiao/p/6129630.html
+            // todo: https://www.runoob.com/w3cnote/heap-sort.html
         }
     }
 
